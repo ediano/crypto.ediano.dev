@@ -1,6 +1,7 @@
-export const i18n = {
-  defaultLocale: 'en-US',
-  locales: ['en-US', 'pt-BR'],
-} as const;
+const defaultLocale = 'en-US';
+const langs = [defaultLocale, 'pt-BR'] as const;
 
-export type Locale = (typeof i18n)['locales'][number];
+const locales = langs as unknown as string[];
+export const i18n = { defaultLocale, locales, localeDetection: true };
+
+export type Locale = (typeof langs)[number];
