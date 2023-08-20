@@ -1,5 +1,6 @@
 export const ptBR = {
   site: {
-    name: 'String encryption',
+    name: 'Crypto',
+    description: 'O serviço de criptografia de código aberto.',
   },
 };

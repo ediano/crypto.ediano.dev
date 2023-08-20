@@ -1,10 +1,10 @@
 import type { DefaultPageProps } from '@/types/pages.type';
 import { getDictionaryServerOnly } from './dictionaries/dictionary-server-only';
 
-type Props = DefaultPageProps;
+type HomeProps = DefaultPageProps;
 
-export default async function Home({ params }: Props) {
-  const t = await getDictionaryServerOnly(params.locale);
+export default async function Home({ params }: HomeProps) {
+  const dict = await getDictionaryServerOnly(params.locale);
 
   return (
     <>

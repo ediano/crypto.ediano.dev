@@ -1,5 +1,6 @@
 export const enUS = {
   site: {
-    name: 'String encryption',
+    name: 'Crypto',
+    description: 'The open source crypto service.',
   },
 };
